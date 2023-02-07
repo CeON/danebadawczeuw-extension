@@ -1,0 +1,9 @@
+.*
+!.gitignore
+!.mvn
+**/target/*
+*.iml
+
+src/main/theme/**/*.css
+src/main/theme/**/*.css.map
+/target/
