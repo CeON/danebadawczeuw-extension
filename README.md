@@ -1,5 +1,5 @@
 # danebadawczeuw-extension
-Social Data Repository extensions that can plugged into dataverse instance
+danebadawczeuw extensions that can plugged into dataverse instance 
 
 ## danebadawczeuw theme
 
