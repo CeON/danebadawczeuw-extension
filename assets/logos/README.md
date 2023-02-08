@@ -8,6 +8,6 @@
 - Copy the `dataverse.default.properties` file to your `~/.dataverse/` folder, and change the file name to `dataverse.properties` (if you haven't already done so)
 
 
-- Edit the `~/.dataverse/dataverse.properites` file by adding the path to the footer HTMl file in the line `FooterCustomizationFile=`:
+- Edit the `~/.dataverse/dataverse.properties` file by adding the path to the footer HTMl file in the line `FooterCustomizationFile=`:
 
         FooterCustomizationFile=[path_to_html_file]
