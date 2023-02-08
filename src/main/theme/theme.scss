@@ -1,4 +1,74 @@
 /* danebadawczeuw color scheme */
 
+$main-color: #529ca1;
+$icon-color: #529ca1;
+$link-color: #193256;
+$border-color: #529ca1;
+$search-result-desc-color: #edfeff;
+$table-row-hover: #d6eff1;
+$table-row-highlight: #fffced;
+$focus-color: #de8800;
+$main-logo: "img/logo-dbuw.svg";
+$primefaces-main: "img/primefaces-main-dbuw.png";
+$dataverse-icon: "img/dataverse-icon-dbuw.svg";
+$ajax_spinner_filter: hue-rotate(-40deg) saturate(0.7);
+$dataverse-icon-mono: "\f206";
+$main-logo-mono: "\f207";
+
+$main-color-original: #c3e7e7;
 
 @import "theme-base.scss";
+
+/* Background dots */
+
+#body-wrapper::before,
+#body-wrapper::after {
+    --bootstrap-container-width: 0;
+    --background-dot-size: 200px;
+	content: "\f207";
+	position: absolute;
+	z-index: -1;
+	font-size: var(--background-dot-size);
+	font-family: "vecler-icons";
+	color: $main-color-original;
+}
+
+#body-wrapper::before {
+	right: Min(0px, calc(50vw - (var(--bootstrap-container-width) / 2) - (var(--background-dot-size) / 2)));
+	top: 160px;
+    width: calc(var(--background-dot-size) / 2);
+    overflow: hidden;
+}
+
+#body-wrapper::after {
+	left: Min(calc(var(--background-dot-size) / -2), calc(50vw - (var(--bootstrap-container-width) / 2) - var(--background-dot-size)));
+	top: 780px;
+}
+
+@media screen and (min-width: $screen-lg-min) {
+	#body-wrapper::before,
+	#body-wrapper::after {
+        --bootstrap-container-width: 1170px;
+	}
+}
+
+@media screen and (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+	#body-wrapper::before,
+	#body-wrapper::after {
+        --bootstrap-container-width: 970px;
+	}
+}
+
+@media screen and (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+	#body-wrapper::before,
+	#body-wrapper::after {
+        --bootstrap-container-width: 750px;
+	}
+}
+
+@media screen and (max-width: $screen-xs-max) {
+	#body-wrapper::before,
+	#body-wrapper::after {
+		display: none;
+	}
+}
