@@ -35,14 +35,14 @@ $main-color-original: #c3e7e7;
 
 #body-wrapper::before {
 	right: Min(0px, calc(50vw - (var(--bootstrap-container-width) / 2) - (var(--background-dot-size) / 2)));
-	top: 160px;
+	top: 215px;
 	width: calc(var(--background-dot-size) / 2);
 	overflow: hidden;
 }
 
 #body-wrapper::after {
 	left: Min(calc(var(--background-dot-size) / -2), calc(50vw - (var(--bootstrap-container-width) / 2) - var(--background-dot-size)));
-	top: 780px;
+	top: 835px;
 }
 
 @media screen and (min-width: $screen-lg-min) {
@@ -71,4 +71,101 @@ $main-color-original: #c3e7e7;
 	#body-wrapper::after {
 		display: none;
 	}
+}
+
+body.high-contrast-yellow-on-black {
+    #body-wrapper::before,
+    #body-wrapper::after {
+        display: none;
+    }
+}
+
+/* Superior logo */
+.superior-logo-link {
+    padding: 13px 0;
+}
+
+@media screen and (min-width: $screen-md-min) {
+	.superior-logo.responsive {
+		display: none;
+	}
+}
+
+@media screen and (max-width: $screen-sm-max) {
+	.superior-logo.big {
+		display: none;
+	}
+}
+
+@media screen and (max-width: $screen-xs-max) {
+    .superior-logo-link {
+        padding: 13px 0;
+    }
+}
+
+/* Fonts for main logo */
+
+@font-face {
+    font-family: "Korolev Light";
+    src: url("fonts/Korolev-Light.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Korolev Compressed Bold";
+    src: url("fonts/Korolev-Compressed-Bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* Main logo */
+
+@media screen and (min-width: $screen-sm-min) {
+    #navbarFixed .navbar-brand #site-logo {
+        top: 29px;
+        left: 41px;
+        font-size: 57px;
+    }
+
+    #navbarFixed .navbar-brand #site-logo + span {
+        padding-left: 85px;
+    }
+}
+
+@media screen and (max-width: $screen-xs-max) {
+    #navbarFixed .navbar-brand {
+        #site-title {
+            margin-top: 2px;
+        }
+
+        #site-logo {
+            top: 18px;
+            left: 26px;
+            font-size: 44px;
+    
+            + span {
+                padding-left: 50px;
+            }
+        }
+    }
+}
+
+#navbarFixed .navbar-brand {
+    #site-title, #site-subtitle {
+        color: #123459;
+        text-transform: uppercase;
+    }
+
+    #site-title {
+        margin-top: 7px;
+        font-family: "Korolev Compressed Bold";
+        font-size: 1.4em;
+    }
+    
+    #site-subtitle {
+        margin-top: -1px;
+        font-family: "Korolev Light";
+        text-align-last: justify;
+    }
 }
