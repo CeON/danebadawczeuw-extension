@@ -19,9 +19,9 @@
 
     <dependencies>
         <dependency>
-            <groupId>edu.harvard.iq</groupId>
+            <groupId>pl.edu.icm.dataverse</groupId>
             <artifactId>dataverse-webapp</artifactId>
-            <version>4.11</version>
+            <version>1.0.0-SNAPSHOT</version>
             <type>war</type>
             <scope>runtime</scope>
         </dependency>
@@ -132,7 +132,7 @@
                     <warSourceDirectory>${war.source.directory}</warSourceDirectory>
                     <overlays>
                         <overlay>
-                            <groupId>edu.harvard.iq</groupId>
+                            <groupId>pl.edu.icm.dataverse</groupId>
                             <artifactId>dataverse-webapp</artifactId>
                             <excludes>
                                 <exclude>${war.theme.path}/**</exclude>
