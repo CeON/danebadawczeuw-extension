@@ -1,5 +1,4 @@
 MAIN_BRANCH="main"
-GIT_URL="https://github.com/CeON/danebadawczeuw-extension.git"
 
 pipeline {
     agent {
