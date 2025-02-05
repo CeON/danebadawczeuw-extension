@@ -23,12 +23,6 @@ pipeline {
 
     stages {
 
-        stage('Checkout') {
-            steps {
-               git branch: "$MAIN_BRANCH", poll: false, url: "$GIT_URL"
-            }
-        }
-
         stage('Build') {
             steps {
                echo 'Building dataverse.'
