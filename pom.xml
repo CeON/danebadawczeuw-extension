@@ -19,8 +19,8 @@
 
     <dependencies>
         <dependency>
-            <groupId>pl.edu.icm.dataverse</groupId>
-            <artifactId>dataverse-webapp</artifactId>
+            <groupId>pl.edu.icm.fairchive</groupId>
+            <artifactId>fairchive-webapp</artifactId>
             <version>1.1.1</version>
             <type>war</type>
             <scope>runtime</scope>
@@ -29,7 +29,7 @@
 
     <repositories>
         <repository>
-            <id>dataverse-releases</id>
+            <id>fairchive-releases</id>
             <url>https://maven.ceon.pl/artifactory/drodb-releases</url>
         </repository>
     </repositories>
@@ -139,8 +139,8 @@
                     <warSourceDirectory>${war.source.directory}</warSourceDirectory>
                     <overlays>
                         <overlay>
-                            <groupId>pl.edu.icm.dataverse</groupId>
-                            <artifactId>dataverse-webapp</artifactId>
+                            <groupId>pl.edu.icm.fairchive</groupId>
+                            <artifactId>fairchive-webapp</artifactId>
                             <excludes>
                                 <exclude>${war.theme.path}/**</exclude>
                                 <exclude>${war.icon.path}/**</exclude>
@@ -157,11 +157,11 @@
 
     <distributionManagement>
         <repository>
-            <id>dataverse-releases</id>
+            <id>fairchive-releases</id>
             <url>https://maven.ceon.pl/artifactory/drodb-releases</url>
         </repository>
         <snapshotRepository>
-            <id>dataverse-snapshots</id>
+            <id>fairchive-snapshots</id>
             <url>https://maven.ceon.pl/artifactory/drodb-snapshots</url>
         </snapshotRepository>
     </distributionManagement>
