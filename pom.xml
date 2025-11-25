@@ -21,7 +21,7 @@
         <dependency>
             <groupId>pl.edu.icm.fairchive</groupId>
             <artifactId>fairchive-webapp</artifactId>
-            <version>1.1.1</version>
+            <version>1.1.2</version>
             <type>war</type>
             <scope>runtime</scope>
         </dependency>
